@@ -1,0 +1,108 @@
+/* general styles */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  background-color: #f0f0f0;
+  box-shadow: 0 10px 4px rgba(35, 35, 35, 0.25);
+  border-radius: 50px;
+
+  margin: 15px;
+  padding: 15px;
+  text-align: center;
+}
+
+h1,
+p,
+button {
+  text-align: center;
+}
+
+hr {
+  margin: 0px;
+  height: 2px;
+  background-color: #000;
+}
+
+button {
+  border: 0;
+  margin-top: 20px;
+}
+
+.btn-red {
+  background-color: #ff6d88;
+  box-shadow: 0 7px 1px rgba(184, 0, 0, 0.25);
+}
+
+.btn-green {
+  background-color: #7dda86;
+  box-shadow: 0 7px 1px rgba(127, 155, 117, 0.25);
+}
+
+.playfield {
+  background-color: #fff;
+  padding: 16px;
+  margin: 15px 0;
+  border-radius: 50px;
+  font-size: 18px;
+}
+
+.playfield > span {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 2px 5px;
+  margin: 1px 0px;
+}
+
+.hit {
+  color: white;
+  background-color: #00860d;
+}
+
+.miss {
+  color: white;
+  background-color: #860000;
+}
+
+.hits {
+  color: #00860d;
+}
+
+.misses {
+  color: #860000;
+}
+
+/* mobile 320px-768px */
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 60px);
+    height: calc(100vh - 70px);
+  }
+  .paragraph {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 40px;
+    margin: 0px;
+  }
+
+  .btn-red {
+    border-radius: 32px;
+    padding: 16px 32px;
+    font-size: 24px;
+  }
+
+  .btn-green {
+    border-radius: 48px;
+    padding: 24px 48px;
+    font-size: 24px;
+  }
+  h2 {
+    font-size: 30px;
+    margin-top: 0.4em;
+  }
+}
