@@ -22,6 +22,10 @@ button {
   text-align: center;
 }
 
+h1 {
+  margin: 0px;
+}
+
 hr {
   margin: 0px;
   height: 2px;
@@ -47,15 +51,10 @@ button {
   background-color: #fff;
   padding: 16px;
   margin: 15px 0;
-  border-radius: 50px;
-  font-size: 18px;
 }
 
 .playfield > span {
   display: inline-block;
-  border-radius: 5px;
-  padding: 2px 5px;
-  margin: 1px 0px;
 }
 
 .hit {
@@ -76,8 +75,8 @@ button {
   color: #860000;
 }
 
-/* mobile 320px-768px */
-@media (max-width: 768px) {
+/* mobile 320px-767px */
+@media (min-width: 320px) {
   .container {
     width: calc(100% - 60px);
     height: calc(100vh - 70px);
@@ -104,5 +103,63 @@ button {
   h2 {
     font-size: 30px;
     margin-top: 0.4em;
+  }
+
+  .playfield {
+    border-radius: 50px;
+    font-size: 18px;
+  }
+
+  .playfield > span {
+    border-radius: 5px;
+    padding: 2px 5px;
+    margin: 1px 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: calc(100% - 60px);
+    height: calc(100vh - 70px);
+  }
+  .paragraph {
+    font-size: 40px;
+  }
+  h1 {
+    font-size: 72px;
+  }
+
+  .btn-red {
+    border-radius: 70px;
+    padding: 35px 70px;
+    font-size: 48px;
+  }
+
+  .btn-green {
+    border-radius: 70px;
+    padding: 35px 140px;
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 56px;
+    margin-top: 0.4em;
+  }
+
+  .playfield {
+    border-radius: 50px;
+    font-size: 30px;
+  }
+
+  .playfield > span {
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 2px 0px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0px auto;
   }
 }
