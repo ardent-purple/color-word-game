@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Color Word Game</title>
+  </head>
+  <body>
+    <!-- templates -->
+    <div class="__hidden">
+      <!-- not-compatible -->
+      <div class="not-compatible">
+        <p>
+          Sorry, your browser is not compatible with speech recognition
+          functions. Please, use Google Chrome or Safari to play this game.
+        </p>
+      </div>
+      <!-- mic-block -->
+      <div class="mic-block">
+        <p>
+          Sorry, you have blocked access to microphone for this site to work.
+          Please, unblock it in your browser settings and reload the page.
+        </p>
+      </div>
+      <!-- enable-mic -->
+      <div class="enable-mic">
+        <p>
+          Color Word is a pretty simple game. Push start to get a set of colored
+          words. You need to tell the colors of the words in order using your
+          microphone. The more colors you tell corectly, the better!
+        </p>
+        <hr />
+        <p>Enable microphone access for this site to play the game.</p>
+        <button class="btn-red">Allow microphone</button>
+      </div>
+      <!-- play -->
+      <div class="play">
+        <p>
+          Color Word is a pretty simple game. Push start to get a set of colored
+          words. You need to tell the colors of the words in order using your
+          microphone. The more colors you tell corectly, the better!
+        </p>
+        <hr />
+        <button class="btn-green">Play!</button>
+      </div>
+      <!-- gameplay -->
+      <div class="gameplay">
+        <div class="playfield"></div>
+        <hr />
+        <h1>Results</h1>
+        <h2>
+          <span class="hits">22</span>
+          /
+          <span class="misses">8</span>
+          /
+          <span class="total">30</span>
+        </h2>
+      </div>
+      <!-- game-over -->
+      <div class="game-over">
+        <h1>Results</h1>
+        <h2>
+          <span class="hits">22</span>
+          /
+          <span class="misses">8</span>
+          /
+          <span class="total">30</span>
+        </h2>
+        <hr />
+        <button class="btn-play btn-green">Play again!</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>Color word</h1>
+      <hr />
+      <div class="game"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

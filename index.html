@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Color word game</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Color word</h1>
+      <hr />
+      <div class="upper">
+        <div class="state state-start">
+          <p>
+            Color Word is a pretty simple game. Push start to get a set of
+            colored words. You need to tell the colors of the words in order
+            using your microphone. The more colors you tell corectly, the
+            better!
+          </p>
+        </div>
+        <div class="state state-game">
+          <div class="playfield"></div>
+        </div>
+      </div>
+      <hr />
+      <div class="lower">
+        <div class="state state-start">
+          <button class="btn-play btn-green">Play!</button>
+        </div>
+        <div class="state state-game">
+          <div class="flex-game">
+            <div>
+              <h1>Results</h1>
+              <h2>
+                <span class="hits">22</span>
+                /
+                <span class="misses">8</span>
+                /
+                <span class="total">30</span>
+              </h2>
+            </div>
+            <div>
+              <button class="btn-play btn-green">Play again!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
