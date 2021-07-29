@@ -26,6 +26,7 @@ const STATES = ['state-start', 'state-game'].map((state) => ({
   dom: document.querySelectorAll(`.${state}`),
 }))
 const stateDomAll = document.querySelectorAll('.state')
+const playfield = document.querySelector('.playfield')
 
 // renders needed logical state
 const switchState = (state) => {
@@ -41,8 +42,23 @@ const switchState = (state) => {
   )
 }
 
+// forms a HTML string of words for the game
+const formWords = (amount = 30) => {
+  let wordsHtml = ''
+  const n = colors.length
+  for (let i = 0; i < amount; i += 1) {
+    const word = colors[Math.floor(n * Math.random())].name
+    const color = colors[Math.floor(n * Math.random())].color
+
+    wordsHtml += `<span style="color: ${color};">${word}</span>`
+  }
+  return wordsHtml
+}
+
 const startGame = () => {
   console.log('game restarted')
+  const words = formWords()
+  playfield.innerHTML = words
   switchState('state-game')
 }
 
