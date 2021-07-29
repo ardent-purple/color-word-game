@@ -20,6 +20,7 @@ h1,
 p,
 button {
   text-align: center;
+  font-family: 'Quicksand', sans-serif !important;
 }
 
 h1 {
